@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AdiSample.UserControls
+namespace AdiSample
 {
     /// <summary>
     /// Interaction logic for Sub_UserControl1.xaml
