@@ -13,5 +13,6 @@ namespace AdiSample
     /// </summary>
     public partial class App : Application
     {
+        public static object ParentWindowRef { get; internal set; }
     }
 }

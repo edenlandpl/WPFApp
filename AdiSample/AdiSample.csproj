@@ -14,6 +14,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -35,17 +37,64 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net462\ControlzEx.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.3.4.13329\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent, Version=6.1.0.326, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Fluent.Ribbon.6.1.0.326\lib\net462\Fluent.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="ribboncontrolslibrary, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.111.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.111.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net462\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -55,6 +104,85 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserControls\MainUserControl1.xaml.cs">
+      <DependentUpon>MainUserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainUserControl2.xaml.cs">
+      <DependentUpon>MainUserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainUserControl3.xaml.cs">
+      <DependentUpon>MainUserControl3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainUserControl4.xaml.cs">
+      <DependentUpon>MainUserControl4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Sub-UserControl1.xaml.cs">
+      <DependentUpon>Sub-UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl02\DataContext\DataContextWindow.xaml.cs">
+      <DependentUpon>DataContextWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl02\DataContext\UC02Person.cs" />
+    <Compile Include="UserControls\UserControl02\DataContext\UC02_02_ListView.xaml.cs">
+      <DependentUpon>UC02_02_ListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl02\UC02_02DataContext.xaml.cs">
+      <DependentUpon>UC02_02DataContext.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03PopUpWindow.xaml.cs">
+      <DependentUpon>UC03PopUpWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_02_Buttons.xaml.cs">
+      <DependentUpon>UC03_02_Buttons.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_03_PaddingMargin.xaml.cs">
+      <DependentUpon>UC03_03_PaddingMargin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_04_ButtonsVisibility.xaml.cs">
+      <DependentUpon>UC03_04_ButtonsVisibility.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_05_ButtonsTransform.xaml.cs">
+      <DependentUpon>UC03_05_ButtonsTransform.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_06_WindowInterface.xaml.cs">
+      <DependentUpon>UC03_06_WindowInterface.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_07_ZdalneUruchomienieButtona.xaml.cs">
+      <DependentUpon>UC03_07_ZdalneUruchomienieButtona.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_08_RadioButton.xaml.cs">
+      <DependentUpon>UC03_08_RadioButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_09_LabelZKlawiszemDostepu.xaml.cs">
+      <DependentUpon>UC03_09_LabelZKlawiszemDostepu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_10_ToolTip.xaml.cs">
+      <DependentUpon>UC03_10_ToolTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_11_Frame.xaml.cs">
+      <DependentUpon>UC03_11_Frame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_12_Expander.xaml.cs">
+      <DependentUpon>UC03_12_Expander.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_13_ListBox.xaml.cs">
+      <DependentUpon>UC03_13_ListBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_14_ComboBox.xaml.cs">
+      <DependentUpon>UC03_14_ComboBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_15_DataGrid.xaml.cs">
+      <DependentUpon>UC03_15_DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_16_RibbonWstazka.xaml.cs">
+      <DependentUpon>UC03_16_RibbonWstazka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl03\UC03_17_Menu.xaml.cs">
+      <DependentUpon>UC03_17_Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControl04\UC04Buttons.xaml.cs">
+      <DependentUpon>UC04Buttons.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,6 +195,110 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UserControls\MainUserControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MainUserControl2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MainUserControl3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MainUserControl4.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Sub-UserControl1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UserControl02\DataContext\DataContextWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl02\DataContext\UC02_02_ListView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl02\UC02_02DataContext.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03PopUpWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_02_Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_03_PaddingMargin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_04_ButtonsVisibility.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_05_ButtonsTransform.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_06_WindowInterface.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_07_ZdalneUruchomienieButtona.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_08_RadioButton.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_09_LabelZKlawiszemDostepu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_10_ToolTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_11_Frame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_12_Expander.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_13_ListBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_14_ComboBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_15_DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_16_RibbonWstazka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl03\UC03_17_Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UserControl04\UC04Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -86,6 +318,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,5 +327,63 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <SplashScreen Include="Images\SplashScreenAdiSample.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ikonkaAdi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button-help-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\pic01_120.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pic02_120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Settings_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Paste_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cut_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Redo_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Favorites_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Check_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Preview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Stock_Index_Up_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Stock_Index_Down_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Copy v2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Copy_32x32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ten projekt zawiera odwołania do pakietów NuGet, których nie ma na tym komputerze. Użyj przywracania pakietów NuGet, aby je pobrać. Aby uzyskać więcej informacji, zobacz http://go.microsoft.com/fwlink/?LinkID=322105. Brakujący plik: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.111.0\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
 </Project>

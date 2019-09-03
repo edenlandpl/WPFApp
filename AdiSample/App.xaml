@@ -6,4 +6,14 @@
     <Application.Resources>
          
     </Application.Resources>
+    
+    <!--Ustawienie listy w pasku szybkiego uruchamiania-->
+    <JumpList.JumpList>
+        <JumpList   >
+            <JumpTask Title="Nowa instancja programu" Description="Uruchom nową instancję programu"/>
+            <JumpTask Title="Jeszcze nowsza instancja programu" Description="Uruchom jeszcze nowszą instację"/>
+            <JumpTask/>
+            <JumpTask Title="Super najnowsza instacja" Description="Uruchom tą te instancję ;-)"/>
+        </JumpList>
+    </JumpList.JumpList>
 </Application>
