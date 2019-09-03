@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="AdiSample.UserControls.UserControl03.UC03_04_ButtonsVisibility"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdiSample.UserControls.UserControl03"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Height="100" Background="LightGray">
+            <Button Visibility="Collapsed">Przycisk Collapsed</Button>
+            <Button>Poniżej przycisku Collapsed</Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Height="100" Background="Gray">
+            <Button Visibility="Hidden">Przycisk Hidden</Button>
+            <Button>Poniżej przycisku Hidden</Button>
+            <TextBlock Padding="5" Grid.Row="2" Text="W przeciwieństwie do przycisku Colapsed przycisk Hidden nadal zajmuje miejsce" Background="Ivory"/>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2">
+            <Button HorizontalAlignment="Left" Background="LightBlue">Left</Button>
+            <Button HorizontalAlignment="Center" Background="Fuchsia">Center</Button>
+            <Button HorizontalAlignment="Right" Background="HotPink">Right</Button>
+            <Button HorizontalAlignment="Stretch" Background="LightSkyBlue">Stretch</Button>
+            <TextBlock Background="Ivory" Text="Wyrównanie Buttons w komórkach. Stretch rozciąga do możliwej wielkości miejsca"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <Button HorizontalContentAlignment="Left" Background="Chartreuse">Left</Button>
+            <Button HorizontalContentAlignment="Center" Background="DarkTurquoise">Center</Button>
+            <Button HorizontalContentAlignment="Right" Background="HotPink">Right</Button>
+            <Button HorizontalContentAlignment="Stretch" Background="LightSkyBlue">Stretch</Button>
+            <TextBlock Background="Ivory" Text="Wyrównanie Content w Buttons. Efekt działania HorizontalContentAllignment."/>
+            <TextBlock Background="Ivory" Text="Działanie Stretch wygląda inaczej niż można się było spodziewać. Wewnętrzny textBlock jest rzeczywiście rozciągnięty, "/>
+            <TextBlock Background="Ivory" Text="ale nie jest prawdziwym elementem Control, więc nie ma notacji dla rozciągania wewnątrz tekstu"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

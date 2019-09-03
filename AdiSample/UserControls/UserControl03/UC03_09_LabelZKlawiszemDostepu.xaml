@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="AdiSample.UserControls.UserControl03.UC03_09_LabelZKlawiszemDostepu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdiSample.UserControls.UserControl03"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel Width="120">
+                <!--Wyświetla błąd, ale kompiluję się. Czary ...-->
+                <Label Target="userNameBox" Content="Nazwa _użytkownika"/>
+                <TextBox x:Name="userLastName"/>
+                
+                <TextBox x:Name="userNameBox"/>            
+            </StackPanel>
+            <TextBlock Background="Ivory" Text="Wciśnij ALT lewy, pojawi się podpowiedź z klawaiszem dostępu. Przy trzymaniu ALT i wciśnięciu u przeniesiemy focus do drugiego textBox"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

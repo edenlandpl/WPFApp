@@ -1,0 +1,52 @@
+﻿<UserControl x:Class="AdiSample.UserControls.UserControl03.UC03_03_PaddingMargin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AdiSample.UserControls.UserControl03"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="LightSteelBlue"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <!--PADDING-->
+        <Label Content="PADDING"/>
+        <Label Padding="0" Background="Ivory" Grid.Row="1">1 wartość "0" dla wszystkich czterech stron</Label>
+        <Label Padding="10,10,10,10" Background="Lavender" Grid.Row="2">1 wartość "10" dla wszystkich czterech stron</Label>
+        <Label Padding="20,5" Background="GreenYellow" Grid.Row="3">2 wartość: lewa i prawa "20, góra i dół "5"</Label>
+        <Label Padding="0,10,20,30" Background="Peru" Grid.Row="4">4 wartości lewo "0", góra "10",prawo "20", dół "30" </Label>
+        <!--MARGIN-->
+        <Label Content="MARGIN" Grid.Column="1"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1" Grid.Column="1">
+            <Label Background="Aqua" >0 - brak marginesu</Label>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="2" Grid.Column="1">
+            <Label Margin="10" Background="Gold" >10 marginesy z każdej strony</Label>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="3" Grid.Column="1">
+            <Label Margin="20,5" Background="LemonChiffon" >20 z lewej i prawej, 5 góra dół</Label>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="4" Grid.Column="1">
+            <Label Margin="0,10,20,30" Background="BlueViolet" >z lewej - 0, z góra - 10, z prawo - 20, dół - 30</Label>
+        </Border>
+        <TextBlock Grid.Row="5" Grid.ColumnSpan="3">
+            <Run Text="Lekko przekłamana wizualizacja, ponieważ na Margin mają również wpływ wielkość komórek z Paddding"/>
+            
+        </TextBlock>
+    </Grid>
+</UserControl>
