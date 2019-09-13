@@ -26,16 +26,9 @@ namespace AdiSample
             InitializeComponent();
         }
 
-        void AddButtons(object sender, RoutedEventArgs e)
+        private void UC04_02_StackPanelAddFromCs_Loaded(object sender, RoutedEventArgs e)
         {
-            Button B1 = new Button(), B2 = new Button(), B3 = new Button();
-            B1.Content = "Hello";
-            B2.Content = "First";
-            B3.Content = "Application";
-            // Now you can set more properties like height, width, margin etc...
-            MyStack.Children.Add(B1);
-            MyStack.Children.Add(B2);
-            MyStack.Children.Add(B3);
+
         }
 
     }

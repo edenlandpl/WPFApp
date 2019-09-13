@@ -4,28 +4,51 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:AdiSample"
-             xmlns:local2="clr-namespace:AdiSample.UserControls.UserControl03"
+             xmlns:a="clr-namespace:AdiSample.UserControls.UserControl04"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Loaded="AddButtons"
              >
-    <Grid>
+    <Grid >
         <TabControl HorizontalAlignment="Left" Height="449" Margin="1,1,0,-0.4" VerticalAlignment="Top" Width="799">
-            <TabItem Header="Załadowanie Content z C#">
-                <StackPanel Name="MyStack" />
-            </TabItem>
             <TabItem Header="Załadowanie innego content XAML">
+                <local:UC04_02_StackPanel/>
+            </TabItem>
+            <TabItem Header="Załadowanie Content z C#">
                 <Grid>
-                    
+                    <!--Zmieniłem nazwę pliku i odwołuje się do starej nazwy-->
+                    <a:UC04_02_StackPanelAddFromCs Loaded="UC04_02_StackPanelAddFromCs_Loaded"/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Button - rodzaje">
-                <local:UC04Buttons/>
+            <TabItem Header="Canvas Panel">
+                <Grid>
+                    <a:UC04_03_CanvasPanel/>
+                </Grid>
             </TabItem>
-            <TabItem Header="Hm...">
-                
+            <TabItem Header="Wrap Panel">
+                <Grid>
+                    <a:UC04_04_WrapPanel/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Dock Panel">
+                <Grid>
+                    <a:UC04_05_DockPanel/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Grid Panel">
+                <Grid>
+                    <a:UC04_06_Grid/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Buttons">
+                <Grid>
+                    <a:UC04_07_ButtonsFeatures/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="DataGrid">
+                <Grid>
+                    <a:UC04_08_DataGrid/>
+                </Grid>
             </TabItem>
         </TabControl>
-
     </Grid>
 </UserControl>
