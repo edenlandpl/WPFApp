@@ -132,6 +132,36 @@
                         <local2:UC03_17_Menu/>
                     </Grid>
                 </TabItem>
+                <TabItem Header="TreeView" >
+                    <Grid>
+                        <local2:UC03_18_TreeView/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="ToolBar" >
+                    <Grid>
+                        <local2:UC03_19_ToolBar/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Resources" >
+                    <Grid>
+                        <local2:UC03_20_Resources/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="ProgressBar" >
+                    <Grid>
+                        <local2:UC03_21_ProgressBar/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Triggers" >
+                    <Grid>
+                        <local2:UC03_22_Triggers/>
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Szablon kontrolki" >
+                    <Grid>
+                        <local2:UC03_23_SzablonKontrolki/>
+                    </Grid>
+                </TabItem>
             </TabControl> 
         </Grid>
     </Grid>
